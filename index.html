@@ -1,47 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de Produtos</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indicações</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
   <header>
-    <h1>Catálogo de Produtos Recomendados</h1>
-    <p>Confira nossas sugestões com links de afiliado.</p>
+    <h1>Indicações</h1>
+    <p>Produtos em destaque para você</p>
+    <a class="youtube-link" href="https://youtube.com/@danielribeiropcp?si=thu6Er83lgQ_pQAQ" target="_blank">
+      <i class="fab fa-youtube"></i> Canal Daniel Ribeiro
+    </a>
   </header>
-  <div id="catalogo" class="catalogo"></div>
-  <script>
-    const produtos = [
-      {
-        "nome": "Carabina de Pressão Beeman PCP",
-        "descricao": "Carabina de pressão Beeman PCP 1331 Raider, madeira 5,5 mm.",
-        "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_987862-MLB75073787982_032024-F-carabina-de-presso-beeman-pcp-1331-raider-madeira-55-rossi.webp",
-        "link": "https://mercadolivre.com/sec/1RsEr6V"
-      },
-      {
-        "nome": "Carabina de Pressão Artemis PCP",
-        "descricao": "Carabina de pressão Artemis PR900S G2, 5,5 mm, 7 tiros.",
-        "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_786345-MLB81095137732_122024-F-carabina-presso-artemis-pcp-pr900s-g2-55mm-7-tiros-bomba.webp",
-        "link": "https://mercadolivre.com/sec/1nUitTj"
-      }
-    ];
 
-    const catalogo = document.getElementById('catalogo');
-    produtos.forEach(produto => {
-      const card = document.createElement('div');
-      card.classList.add('card');
-      card.innerHTML = `
-        <img src="${produto.imagem}" alt="${produto.nome}">
-        <div class="card-body">
-          <h2>${produto.nome}</h2>
-          <p>${produto.descricao}</p>
-          <a href="${produto.link}" target="_blank">Ver no Mercado Livre</a>
-        </div>
-      `;
-      catalogo.appendChild(card);
-    });
-  </script>
+  <div class="container">
+    <div class="card">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_987862-MLB75073787982_032024-F-carabina-de-presso-beeman-pcp-1331-raider-madeira-55-rossi.webp" alt="Beeman Raider PCP 5.5mm" />
+      <a href="https://mercadolivre.com/sec/1RsEr6V" target="_blank">Ver no Mercado Livre</a>
+    </div>
+
+    <div class="card">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_786345-MLB81095137732_122024-F-carabina-presso-artemis-pcp-pr900s-g2-55mm-7-tiros-bomba.webp" alt="Artemis PCP PR900s G2 5.5mm" />
+      <a href="https://mercadolivre.com/sec/1nUitTj" target="_blank">Ver no Mercado Livre</a>
+    </div>
+  </div>
+
+  <a class="whatsapp-float" href="https://chat.whatsapp.com/E7AQwiwMiS43yajWn22ms9" target="_blank" title="Grupo de Carabinas">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </body>
 </html>
