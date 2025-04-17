@@ -58,4 +58,42 @@ h1 {
 .card a:hover {
   background-color: #1d4ed8;
 }
-Adiciona estilo ao site
+
+.youtube-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.youtube-link i {
+  color: red;
+  margin-right: 6px;
+}
+
+.youtube-link:hover {
+  text-decoration: underline;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  line-height: 60px;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebea5;
+}
