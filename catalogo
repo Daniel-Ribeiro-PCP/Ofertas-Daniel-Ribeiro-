@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indicações</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Indicações</h1>
+    <p>Produtos recomendados com links afiliados do Mercado Livre</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_987862-MLB75073787982_032024-F-carabina-de-presso-beeman-pcp-1331-raider-madeira-55-rossi.webp" alt="Beeman Raider PCP 5.5mm" />
+      <a href="https://mercadolivre.com/sec/1RsEr6V" target="_blank">Ver no Mercado Livre</a>
+    </div>
+
+    <div class="card">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_786345-MLB81095137732_122024-F-carabina-presso-artemis-pcp-pr900s-g2-55mm-7-tiros-bomba.webp" alt="Artemis PCP PR900s G2 5.5mm" />
+      <a href="https://mercadolivre.com/sec/1nUitTj" target="_blank">Ver no Mercado Livre</a>
+    </div>
+  </div>
+</body>
+</html>
