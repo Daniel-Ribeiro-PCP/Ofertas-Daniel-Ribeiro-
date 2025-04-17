@@ -1,35 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Indicações</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <title>Indicações do Canal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .whatsapp-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>Indicações</h1>
-    <p>Produtos em destaque para você</p>
-    <a class="youtube-link" href="https://youtube.com/@danielribeiropcp?si=thu6Er83lgQ_pQAQ" target="_blank">
-      <i class="fab fa-youtube"></i> Canal Daniel Ribeiro
-    </a>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow-md p-4 flex items-center justify-center space-x-4">
+    <img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" alt="YouTube Logo" class="w-10 h-10">
+    <h1 class="text-2xl font-bold text-red-600">Canal Aperitivos</h1>
   </header>
 
-  <div class="container">
-    <div class="card">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_987862-MLB75073787982_032024-F-carabina-de-presso-beeman-pcp-1331-raider-madeira-55-rossi.webp" alt="Beeman Raider PCP 5.5mm" />
-      <a href="https://mercadolivre.com/sec/1RsEr6V" target="_blank">Ver no Mercado Livre</a>
-    </div>
+  <main class="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <a href="https://mercadolivre.com/sec/1RsEr6V" target="_blank" class="bg-white shadow rounded p-2">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_987862-MLB75073787982_032024-F-carabina-de-presso-beeman-pcp-1331-raider-madeira-55-rossi.webp" alt="Produto 1" class="w-full rounded">
+    </a>
+    <a href="https://mercadolivre.com/sec/1nUitTj" target="_blank" class="bg-white shadow rounded p-2">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_786345-MLB81095137732_122024-F-carabina-presso-artemis-pcp-pr900s-g2-55mm-7-tiros-bomba.webp" alt="Produto 2" class="w-full rounded">
+    </a>
+    <a href="https://mercadolivre.com/sec/1qoMv47" target="_blank" class="bg-white shadow rounded p-2">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_773370-MLA82282323384_022025-F.webp" alt="Produto 3" class="w-full rounded">
+    </a>
+    <a href="https://mercadolivre.com/sec/33TXBqp" target="_blank" class="bg-white shadow rounded p-2">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_979134-MLU74368546466_022024-F.webp" alt="Produto 4" class="w-full rounded">
+    </a>
+    <a href="https://mercadolivre.com/sec/1dwDHQ9" target="_blank" class="bg-white shadow rounded p-2">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_758192-MLB80622430113_112024-F-combo-02-chumbos-ballistic-power-55mm-hell-boy-55mm.webp" alt="Produto 5" class="w-full rounded">
+    </a>
+    <a href="https://mercadolivre.com/sec/1QT8ztN" target="_blank" class="bg-white shadow rounded p-2">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_618821-MLB52652020767_112022-F-suporte-mount-perfil-medio-luneta-tubo-25mm-trilho-20mm-2pc.webp" alt="Produto 6" class="w-full rounded">
+    </a>
+    <a href="https://mercadolivre.com/sec/1r7TYU6" target="_blank" class="bg-white shadow rounded p-2">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_880883-MLB75464567863_032024-F-oring-da-valvula-de-retenco-da-bomba-pcp-3-estagio-pe-fixo.webp" alt="Produto 7" class="w-full rounded">
+    </a>
+    <a href="https://mercadolivre.com/sec/2dYSoAq" target="_blank" class="bg-white shadow rounded p-2">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_698847-MLB77009785834_062024-F-chumbo-trefilado-5-kg-escolher-tamanho.webp" alt="Produto 8" class="w-full rounded">
+    </a>
+    <a href="https://mercadolivre.com/sec/1VpoMxx" target="_blank" class="bg-white shadow rounded p-2">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_889859-MLB72315011448_102023-F-chumbinho-aurok-pointed-55mm-115g-carabina-rifle-250unid.webp" alt="Produto 9" class="w-full rounded">
+    </a>
+    <a href="https://mercadolivre.com/sec/1Vn7B1u" target="_blank" class="bg-white shadow rounded p-2">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_795622-MLB72533468635_102023-F-chumbinho-aurok-slug-55mm-162g-ponta-oca-pesado-250unid.webp" alt="Produto 10" class="w-full rounded">
+    </a>
+    <!-- Continue adicionando os produtos restantes aqui no mesmo padrão -->
+  </main>
 
-    <div class="card">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_786345-MLB81095137732_122024-F-carabina-presso-artemis-pcp-pr900s-g2-55mm-7-tiros-bomba.webp" alt="Artemis PCP PR900s G2 5.5mm" />
-      <a href="https://mercadolivre.com/sec/1nUitTj" target="_blank">Ver no Mercado Livre</a>
-    </div>
+  <div class="whatsapp-button">
+    <a href="https://wa.me/SEU_NUMERO" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
   </div>
-
-  <a class="whatsapp-float" href="https://chat.whatsapp.com/E7AQwiwMiS43yajWn22ms9" target="_blank" title="Grupo de Carabinas">
-    <i class="fab fa-whatsapp"></i>
-  </a>
 </body>
 </html>
